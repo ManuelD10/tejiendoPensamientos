@@ -9,3 +9,104 @@ body{
 	width: 100%;
 	height: 355px;
 }
+/*------------------- Style Toolbar ----------------*/
+.main-tool-bar{
+	background: #1CAB1E;
+	box-shadow: 0px 3px 9px gray;
+	color: white;
+	height: 56px;
+	width: 100%;
+}
+.icon-home{
+	background: url(../images/homeToolbar.png) no-repeat;
+	background-position-x: 7px;
+    background-position-y: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 20px;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 38px;
+    width: 52px;
+}
+.icon-productos{
+	background: url(../images/productosToolbar.png) no-repeat;
+	background-position-x: 11px;
+    background-position-y: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 20px;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 38px;
+    width: 70px;
+}
+.icon-contacto{
+	background: url(../images/contactoToolbar.png) no-repeat;
+	background-position-x: 8px;
+    background-position-y: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 20px;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 38px;
+    width: 60px;
+}
+/*----------------------------------------------------*/
+.section-home{
+	height: 406px;
+	padding-bottom: 20px;
+	margin: 0 auto; 
+	margin-bottom: 30px;
+	margin-top: 50px;
+	width: 715px;
+}
+.img-icon-home{
+	 margin: 0 auto;
+	 display: -webkit-box;
+}
+.txt-home{
+	font-family: sans-serif;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: -15px;
+    text-align: justify;
+    width: 600px;
+}
+.img-senefa{
+	background: url(../images/img-1.jpg) no-repeat;
+    background-size: 100%;
+    background-position-y: -140px;
+    box-shadow: 0px 3px 5px grey;
+    height: 220px;
+    width: 100%;
+}
+.filtro1{
+	background: rgba(52, 140, 100, 0.5);
+	color: white;
+	font-family: sans-serif;
+	font-style: italic;
+    height: 130px;
+    text-align: center;
+    padding-top: 90px;
+    width: 100%;
+}
+.txt-senefa{
+    margin: 0 auto;
+    width: 640px;
+}
+/*----------------------------------------------------*/
+.section-product{
+	height: auto;
+	margin: 0 auto; 
+	margin-top: -60px;
+	width: 715px;
+}
+
