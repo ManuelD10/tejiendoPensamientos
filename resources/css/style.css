@@ -2,7 +2,9 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
-
+ol,ul {
+	list-style:none;
+}
 
 .ctn-header{
 	background: green;
@@ -21,10 +23,11 @@ body{
 	background: url(../images/homeToolbar.png) no-repeat;
 	background-position-x: 7px;
     background-position-y: 2px;
-    cursor: pointer;
     display: inline-block;
     font-family: sans-serif;
     font-size: 14px;
+    text-decoration: none;
+    color: white;
     height: 20px;
     margin-left: 20%;
     text-align: center;
@@ -35,7 +38,6 @@ body{
 	background: url(../images/productosToolbar.png) no-repeat;
 	background-position-x: 11px;
     background-position-y: 2px;
-    cursor: pointer;
     display: inline-block;
     font-family: sans-serif;
     font-size: 14px;
@@ -49,7 +51,6 @@ body{
 	background: url(../images/contactoToolbar.png) no-repeat;
 	background-position-x: 8px;
     background-position-y: 2px;
-    cursor: pointer;
     display: inline-block;
     font-family: sans-serif;
     font-size: 14px;
@@ -70,7 +71,12 @@ body{
 }
 .img-icon-home{
 	 margin: 0 auto;
-	 display: -webkit-box;
+	 display: block;
+}
+.img-icon-contact{
+	 margin: 0 auto;
+	 display: block;
+	 margin-top: -60px;
 }
 .txt-home{
 	font-family: sans-serif;
@@ -84,12 +90,30 @@ body{
 	background: url(../images/img-1.jpg) no-repeat;
     background-size: 100%;
     background-position-y: -140px;
-    box-shadow: 0px 3px 5px grey;
+    box-shadow: 0px 0px 20px black;
+    height: 220px;
+    width: 100%;
+}
+.img-senefa2{
+	background: url(../images/img-2.jpg) no-repeat;
+    background-size: 100%;
+    background-position-y: -380px;
+    box-shadow: 0px 0px 20px black;
     height: 220px;
     width: 100%;
 }
 .filtro1{
 	background: rgba(52, 140, 100, 0.5);
+	color: white;
+	font-family: sans-serif;
+	font-style: italic;
+    height: 130px;
+    text-align: center;
+    padding-top: 90px;
+    width: 100%;
+}
+.filtro2{
+	background: rgba(221, 202, 25, 0.5);
 	color: white;
 	font-family: sans-serif;
 	font-style: italic;
@@ -110,3 +134,272 @@ body{
 	width: 715px;
 }
 
+.ctn-gallery{
+	height: 1200px;
+	margin: 0 auto; 
+	margin-bottom: 20px;
+	width: 690px;
+}
+.section-contacto{
+	background: black;
+	color: white;
+	font-family: sans-serif;
+	height: auto;
+	margin-top: -97px;
+	padding-bottom: 50px;
+	width: 100%;
+}
+.ctn-content-contact{
+	height: auto;
+	margin: 0 auto;
+	padding-top: 150px;
+	width: 720px;
+}
+
+/*------------------- Style Contact ----------------*/
+.input-nombre{
+	border-radius: 5px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.input-correo{
+	border-radius: 5px;
+	margin-bottom: 15px;
+	margin-left:  23px;
+}
+.input-telefono{
+	border-radius: 5px;	
+	margin-bottom: 15px;
+	margin-left:  10px;
+}
+.input-asunto{
+	float: left;
+	border-radius: 5px;	
+	margin-left: 65px;
+    margin-top: -32px;
+}
+.ctn-input-asunto{
+	margin-left: 250px;
+    height: 84px;
+    width: 260px;
+    margin-top: -116px;
+}
+.btn-enviar{
+	background: #B5832C;
+	border-radius: 0px;
+	color: white;
+	margin-left: 437px;
+}
+.ctn-datos-contact{
+	float: right;
+    height: 90px;
+    width: 200px;
+    margin-top: -66px;
+}
+.cel{
+	background: url(../images/cel.png) no-repeat;
+	color: white;
+	height: 45px;
+	width: 174px;
+    padding-left: 26px;
+    font-size: 28px;
+}
+.mail{
+	background: url(../images/mail.png) no-repeat;
+	color: white;
+	width: 200px;
+	height: 45px;
+	padding-left: 31px;
+    padding-top: 4px;
+}
+
+
+
+/*-------------------------------------STYLE GALLERY-----------------------------------------*/
+.lb-album{
+	width: 650px;
+	margin: 0 auto;
+	padding-left: 0px;
+    margin-left: -8px;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+.lb-album li{
+	float: left;
+	margin-left: 55px;
+	margin-top: 8px;
+	position: relative;
+}
+.lb-album li > a,
+.lb-album li > a img{
+	display: block;
+}
+.lb-album li > a{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	padding: 5px;
+	background: #D66305;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+.lb-album li > a span{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 5px;
+	left: 5px;
+	text-align: center;
+	line-height: 150px;
+	color: white;
+	font-size: 24px;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	background: rgba(214, 99, 5, 0.3 );
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+.lb-album li > a:hover span{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+.lb-overlay{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	z-index: 99;
+	text-align: center;
+	background: rgba(214, 99, 5, 0.6 );
+	/*background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, rgba(241,210,194,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,rgba(241,210,194,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);*/
+}
+.lb-overlay > div{
+	position: relative;
+	color: white;
+	width: 550px;
+	height: 80px;
+	margin: 40px auto 0px auto;
+}
+.lb-overlay div h3,
+.lb-overlay div p{
+	padding: 0px 20px;
+	width: 200px;
+	height: 60px;
+}
+.lb-overlay div h3{
+	font-size: 36px;
+	float: left;
+	text-align: right;
+	margin-top: 0px !important;
+	border-right: 1px solid white;
+}
+.lb-overlay div h3 span,
+.lb-overlay div p{
+	font-size: 16px;
+	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	font-style: italic;
+}
+.lb-overlay div h3 span{
+	display: block;
+	line-height: 6px;
+}
+.lb-overlay div p{
+	font-size: 14px;
+	text-align: left;
+	float: left;
+	width: 260px;
+}
+.lb-overlay a.lb-close{
+	background: rgba(27,54,81,0.8);
+	z-index: 1001;
+	color: #fff;
+	position: absolute;
+	top: 43px;
+	left: 50%;
+	font-size: 15px;
+	line-height: 26px;
+	text-align: center;
+	width: 50px;
+	height: 23px;
+	overflow: hidden;
+	margin-left: -25px;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+}
+.lb-overlay img{
+	/* height: 100%; For Opera max-height does not seem to work */
+	max-height: 100%;
+	position: relative;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+}
+.lb-prev, .lb-next{
+	text-indent: -9000px;
+	position: absolute;
+	top: -32px;
+	width: 24px;
+	height: 25px;
+	left: 50%;
+	opacity: 0.8;
+	filter: alpha(opacity=80); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=80)"; /*IE8*/
+}
+.lb-prev:hover, .lb-next:hover{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+.lb-prev{
+	margin-left: -30px;
+	background: transparent url(../images/arrows.png) no-repeat top left;
+}
+.lb-next{
+	margin-left: 6px;
+	background: transparent url(../images/arrows.png) no-repeat top right;
+}
+.lb-overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding: 80px 100px 120px 100px;
+}
+.lb-overlay:target img,
+.lb-overlay:target a.lb-close{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+/* 
+	100% Height for Opera as the max-height seems to be ignored, not optimal for large screens 
+	http://bricss.net/post/11230266445/css-hack-to-target-opera 
+*/
+x:-o-prefocus, .lb-overlay img {
+    height: 100%;
+}
